@@ -42,13 +42,13 @@
   </p>
 </div>
 
-This plugin migrates yesterdays unfinished tasks to todays journal. It is *meant* to be used in a template, but *can* be run mannually as well. It supports limiting tasks to specific markers or tags.
+This plugin migrates yesterday's unfinished tasks to today's journal. It is *meant* to be used in a template, but *can* be run manually as well. It supports limiting tasks to specific markers or tags.
 
 > I can't believe it! They keep following me. 
 >
 >— <cite>Unhappy customer</cite>
 
-**Notice:** This plugin is in beta, make backups of your graph. It shouldn't, but *can* (theoratically) make tasks disappear in the digital void.
+**Notice:** This plugin is in beta, make backups of your graph. It shouldn't, but *can* (theoretically) make tasks disappear in the digital void.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -70,7 +70,7 @@ This plugin migrates yesterdays unfinished tasks to todays journal. It is *meant
 - Click the 3 dots in the righthand corner and go to **Settings**.
 - Go to **Advanced** and enable **Plug-in system**.
 - Restart the application.
-- Click 3 dots and go to Plugins (or `Esc t p`).
+- Click the 3 dots and go to Plugins (or `Esc t p`).
 
 ### Install plugin from the Marketplace (recommended) 
 
@@ -100,7 +100,7 @@ LATER This is a test [[testme]]
 LATER This is a second test [[testme]]
 ```
 
-Then place a placeholder with: `/move unfinished business here` Press escape to leave the block" 
+Then place a placeholder with: `/move unfinished business here`. Press escape to leave the block
 
 If everything is working, you should see:
 
@@ -110,24 +110,25 @@ LATER This is a test [[testme]]
 LATER This is a second test [[testme]]
 ```
 
-**Important:** the placeholder, by default looks like this: `{{renderer :unfinishedBusiness, testme}}` to migrate *all* yesterdays tasks (ignoring all tags) remove *both* the tag **and the comma!** It should look like this: `{{renderer :unfinishedBusiness}}`
+**Important:** the placeholder, by default looks like this: `{{renderer :unfinishedBusiness, testme}}`. <br>
+To migrate *all* yesterday's tasks (ignoring all tags) remove *both* the tag **and the comma!** It should look like this: `{{renderer :unfinishedBusiness}}`
 
-### Imsure — for when you live dangerously
+### imsure — for when you live dangerously
 
-It is possible to run *unfinished business* on your *whole* graph. This can be dangerous, so has it's own flag:
+1️⃣ It is possible to run *unfinished business* on your *whole* graph. This can be dangerous, so it has its own flag:
 
 `{{renderer :unfinishedBusiness, testme, imsure}}`
 
 - **testme** would be the tag matched against
 - **imsure** is to make sure you want it to check *all* your pages
 
-So, this will move *all* tasks, from *all* pages, with the `[[testme]]` tag.
+⚠️ So, this will move *all* tasks, from *all* pages, but only those with the `[[testme]]` tag.
 
-Last, it is possible to run *unfinished business* on *all tasks* *all over your graph*, ignoring **all** tags: 
+2️⃣ Last, it is possible to run *unfinished business* on *all tasks* *all over your graph*, ignoring **all** tags: 
 
 `{{renderer :unfinishedBusiness, imsure, imsure}}`
 
-This will move **all** tasks (as defined in your config), from **all over your graph**, with **any, or no** tag, to the place you ran the macro from!
+⚠️ This will move **all** tasks (as defined in your config), from **all over your graph**, with **any, or no** tag, to the place you ran the macro from!
 
 So make sure you're *really* *really* sure 😜.
 
