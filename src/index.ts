@@ -124,7 +124,7 @@ const main = async () => {
       }
       else { 
         let msg  = `**🚀 Moved ${blocks ?  blocks.length : "zero" } tasks`
-            msg += `(${logseq.settings.sortOrder})`
+            msg += ` (${logseq.settings.sortOrder})`
             msg += `${omniOK ? "" : " from yesterday"}`
             msg += `${ (taskTag) ? " (#"+taskTag+")" : "" }**`
         await logseq.Editor.updateBlock(payload.uuid, msg ) 
