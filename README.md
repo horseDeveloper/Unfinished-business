@@ -93,7 +93,7 @@ As an alternative, go to the location you want to gather the unfinished tasks, u
 
 ### Testing if it works
 
-As a test, create two tasks in **yesterdays** journal page:
+As a test, create two tasks in **yesterday's** journal page:
 
 ``` markdown
 LATER This is a test [[testme]]
@@ -105,7 +105,7 @@ Then place a placeholder with: `/move unfinished business here`. Press escape to
 If everything is working, you should see:
 
 ``` markdown
-**🚀 Moved 2 unfinished tasks from yesterday **
+**🚀 Moved 2 unfinished tasks from yesterday**
 LATER This is a test [[testme]]
 LATER This is a second test [[testme]]
 ```
